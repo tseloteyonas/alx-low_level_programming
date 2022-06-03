@@ -1,17 +1,28 @@
 #include <stdlib.h>
 #include <stdlib.h>
-int n;
-n=rand();
-if (n>0)
-{
-	printf(n is positive'\n');
-}
-if(n=0)
-	{
-        printf(n is zero'\n');
-	}
-	if(n<0)
-{
-        printf(n is negative'\n');
-}
+/**
+ * main - main block
+ * Description: Get a random number and print it
+ * and if it is positive, negative, or zero
+ * Return: 0
+ */
 
+
+int main(void)
+{
+           int n;
+           n=rand();
+         if (n > 0)
+           {
+	printf("%d is %s\n", n, "positive");
+           }
+        if( n= 0)
+	{
+        printf("%d is %s\n", n, "zero");
+	}
+	if(n < 0)
+         {   
+        printf("%d is %s\n", n, "negative");
+         }
+         return(0);
+}
