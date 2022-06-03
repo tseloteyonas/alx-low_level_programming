@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * main - main block
  * Description: Get a random number and print it
