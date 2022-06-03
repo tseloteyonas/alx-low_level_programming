@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 /**
  * main - main block
@@ -6,24 +7,17 @@
  * and if it is positive, negative, or zero
  * Return: 0
  */
-
-
 int main(void)
 {
-           int n;
-           n=rand();
-         if (n > 0)
-           {
-	printf("%d is %s\n", n, "positive");
-           }
-	 else if(n < 0)
-         {   
-        printf("%d is %s\n", n, "negative");
-         }
-	 else
-        {
-        printf("%d is %s\n", n, "zero");
-        }
+        int n;
 
-         return(0);
+        srand(time(0));
+        n = rand() - RAND_MAX / 2;
+	if(n > 0){
+		printf("%d is %s\n", n, "positive");}
+	else if(n < 0){
+		printf("%d is %s\n", n, "negative");}
+	else 
+		printf("%d is %s\n", n, "zero");}
+        return (0);
 }
